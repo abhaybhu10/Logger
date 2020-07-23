@@ -6,7 +6,9 @@ import sink.Sink;
 
 import java.util.Map;
 
-
+/**
+ * Class responsible for maintaining subscription of Sink. sends message for each subscriber on new message.
+ */
 public class Subject {
     Map<Sink, Subscription> subscriptionMap = Maps.newConcurrentMap();
 

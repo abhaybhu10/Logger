@@ -9,6 +9,9 @@ import sink.SinkConfiguration;
 import subscriber.Subject;
 import subscriber.Subscription;
 
+/**
+ * Setup logger and Sink. Wires them up.
+ */
 public class LoggerConfigurationLoader {
     public  static Logger getLogger(String namespace) {
         SinkConfiguration sinkConfiguration = SinkConfigurationLoader.getSinkConfiguration(Level.DEBUG);

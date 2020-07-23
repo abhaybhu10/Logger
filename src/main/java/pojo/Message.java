@@ -13,13 +13,13 @@ import java.util.Observable;
 @Data
 @NonNull
 public class Message extends Observable {
-    String message;
-    Level level;
-    String namespace;
-    ZonedDateTime dateTime;
-    String threadId;
+    final String message;
+    final Level level;
+    final String namespace;
+    final ZonedDateTime dateTime;
+    final String threadId;
 
-    public static Message from(Level level, String namespace, String message) {
+    public static Message from(final Level level, final String namespace, final String message) {
         return Message.builder()
                 .namespace(namespace)
                 .message(message)

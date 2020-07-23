@@ -7,6 +7,9 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * Sink for writing message to local file.
+ */
 @RequiredArgsConstructor
 public class FileBasedSink implements Sink {
     private static final String PATH = "/tmp/test/";

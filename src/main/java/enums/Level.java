@@ -1,6 +1,8 @@
 package enums;
 
-
+/**
+ * Logging level.
+ */
 public enum  Level {
     ERROR("error"),
     INFO("info"),

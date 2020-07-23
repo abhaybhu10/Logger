@@ -10,6 +10,10 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Queue based subscription. stores message received from upstream into queue and calls update method on each
+ * Observers(Sink).
+ */
 @EqualsAndHashCode
 public class QueueSubscription implements Subscription {
     final Queue<Message> messageQueue;

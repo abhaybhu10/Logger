@@ -5,6 +5,9 @@ import sink.SinkConfiguration;
 
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Initialises Sink.
+ */
 public class SinkConfigurationLoader {
     public static SinkConfiguration getSinkConfiguration(Level level) {
         return SinkConfiguration
